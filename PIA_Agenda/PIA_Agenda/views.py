@@ -16,14 +16,14 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/contact')
-def contact():
+@app.route('/SingUp')
+def SingUp():
     """Renders the contact page."""
     return render_template(
-        'contact.html',
-        title='Contact',
+        'indexSingUp.html',
+        title='SingUp',
         year=datetime.now().year,
-        message='Your contact page.'
+        message='Registrate aqui.'
     )
 
 @app.route('/about')
